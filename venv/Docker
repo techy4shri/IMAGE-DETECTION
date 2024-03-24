@@ -1,19 +1,19 @@
-# Base image for Python environment with Streamlit
-FROM python:3.9-slim
+FROM python:3.7
+
+RUN pip install virtualenv
+ENV VIRTUAL_ENV=/venv
+RUN virtualenv venv -p python3
+ENV PATH="VIRTUAL_ENV/bin:$PATH"
 
 WORKDIR /app
-
-# Copy requirements file
-COPY requirements.txt ./
+ADD . /app
 
 # Install dependencies
 RUN pip install -r requirements.txt
+RUN apt-get update
 
-# Copy Streamlit app and other Python code
-COPY . .
+# Expose port 
+ENV PORT 8501
 
-# Expose port for Streamlit app
-EXPOSE 8080
-
-# Run the Streamlit app
-CMD ["streamlit", "run", "main.py"]  # Replace "main.py" with your app file
+# Run the application:
+CMD ["streamlit","run","app.py"]
