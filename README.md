@@ -35,7 +35,7 @@ Run the application:
 Bash
 docker-compose up
 Use code with caution.
-This will start the application. The frontend will typically be accessible on http://localhost:80 (adjust the port if mapped differently in docker-compose.yml).
+This will start the application. The frontend will typically be accessible on http://localhost:80.
 
 Testing:
 
@@ -52,11 +52,4 @@ The project includes separate Dockerfiles for the frontend and backend, along wi
 
 Further Development:
 
-This project provides a foundation for building a web application with object detection capabilities. You can customize the application by:
-
-Enhancing the user interface using React components and styling libraries.
-Expanding the object detection functionalities using OpenCV or other libraries.
-Integrating with different back-end frameworks and libraries based on your specific needs.
-Support:
-
-For any issues or questions, feel free to consult the project documentation or create an issue on the project's repository (if applicable).
+This project provides a foundation for building a web application with object detection capabilities. 
