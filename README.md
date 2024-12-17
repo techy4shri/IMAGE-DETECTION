@@ -1,55 +1,121 @@
-# IMAGE-DETECTION
-Features:
+# Vehicle Number Plate Detection App
 
-User-friendly interface with navigation bar, image upload form, and image display section.
-Built using React.js for a responsive and smooth user experience.
-Back-end powered by Streamlit for image processing tasks.
-Utilizes OpenCV and PyTorch for object detection (e.g., vehicle recognition and counting).
-Packaged as a Docker application for easy deployment.
-Prerequisites:
+## 🚀 Overview
+This is a *Vehicle Number Plate Detection App* built using *React.js* for the front-end, *Streamlit* for the backend, and *YOLO (You Only Look Once)* for object detection. The app allows users to upload images, detects vehicle number plates, and reads the extracted text. The application is containerized using *Docker* for easy deployment and scalability.
 
-Node.js and npm (or yarn) installed on your system.
-Docker Desktop installed on your system.
-Setup:
+---
 
-Clone the repository:
+## 🎯 Features
+- *User-Friendly Interface*: Navigation bar, image upload form, and result display for an intuitive user experience.
+- *Number Plate Detection: Detects vehicle number plates from uploaded images using the **YOLO* model.
+- *Text Extraction*: Reads the detected number plates using Optical Character Recognition (OCR).
+- *Responsive Front-End: Built with **React.js* for a smooth and interactive user experience.
+- *Scalable Deployment: Packaged with **Docker* for portability and ease of deployment.
+- *Backend Powered by Streamlit*: Handles image processing and OCR tasks efficiently.
 
-Bash
-git clone https://your_github_repo_url.git
-cd your_project_name
-Use code with caution.
-Install dependencies:
+---
 
-Bash
-npm install  # or yarn install
-Use code with caution.
-Running the Application:
+## 🛠 Tech Stack
+- *Frontend*: React.js
+- *Backend*: Streamlit (Python)
+- *Containerization*: Docker
+- *Machine Learning*: YOLO (You Only Look Once)
+- *OCR*: Tesseract OCR
+- *Computer Vision*: OpenCV, PyTorch
 
-Build the Docker images:
+---
 
-Bash
-docker-compose build
-Use code with caution.
-Run the application:
+## 📦 Prerequisites
+- *Node.js* and npm (or yarn)
+- *Python* (3.8 or above)
+- *Docker Desktop* installed on your system
 
-Bash
-docker-compose up
-Use code with caution.
-This will start the application. The frontend will typically be accessible on http://localhost:80.
+---
 
-Testing:
+## 📦 Setup & Installation
+Follow these steps to set up and run the project locally:
 
-Access the application in your web browser.
-Use the upload form to select an image from your local machine.
-The application will process the image and display both the original and the processed image with detected objects highlighted.
-Additional Notes:
+### *1. Clone the Repository*
+`git clone https://github.com/techy4shri/IMAGE-DETECTION.git`
+`cd IMAGE-DETECTION`
 
-You can stop the containers using docker-compose down.
-To detach from the running containers and keep them running in the background, use docker-compose up -d.
-Dockerfile and docker-compose.yml:
 
-The project includes separate Dockerfiles for the frontend and backend, along with a docker-compose.yml file that specifies the environment and services. These files define how the application is packaged and run within Docker containers.
+### *2. Install Frontend Dependencies*
+Ensure Node.js is installed:
+`npm install  # or yarn install`
 
-Further Development:
 
-This project provides a foundation for building a web application with object detection capabilities. 
+### *3. Install Backend Dependencies*
+Ensure Python is installed:
+`pip install -r requirements.txt`
+
+
+### *4. Running the Application*
+#### *With Docker*
+1. Build the Docker images:
+`docker-compose build`
+
+2. Start the application:
+`docker-compose up`
+
+The app will be accessible at http://localhost:80 (frontend) and Streamlit backend.
+
+#### *Without Docker*
+1. Run the Streamlit backend:
+`streamlit run app.py`
+
+2. Start the React.js frontend:
+`npm start`
+
+Access the frontend at http://localhost:3000.
+
+---
+
+## 🖼 Testing the Application
+1. Access the app in your web browser.
+2. Use the *upload form* to select an image from your local machine.
+3. The app processes the image, highlights detected vehicle number plates, and extracts the text.
+4. Results, including the processed image and text, will be displayed.
+
+---
+
+## 📄 Dockerfile and docker-compose.yml
+The project includes:
+- *Frontend Dockerfile*: Defines the React.js container.
+- *Backend Dockerfile*: Defines the Streamlit container.
+- *docker-compose.yml*: Orchestrates the services and environment configurations.
+
+---
+
+## 🤖 Future Enhancements
+- Improve detection accuracy using *YOLOv5* or *YOLOv7*.
+- Integrate real-time *video detection* for live number plate recognition.
+- Optimize *OCR logic* for better text accuracy.
+- Add support for a *database* to store detected results.
+- Deploy the app to cloud platforms like AWS, Azure, or Heroku.
+
+---
+
+## 📜 License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🤝 Contributing
+Contributions are welcome! If you find bugs or want to add new features:
+1. Fork this repository.
+2. Create a new branch (git checkout -b feature-branch).
+3. Commit your changes (git commit -m "Add some feature").
+4. Push to the branch (git push origin feature-branch).
+5. Open a Pull Request.
+
+---
+
+## 💻 Connect with Me
+- *GitHub*: [techy4shri](https://github.com/techy4shri)
+- *LinkedIn*: [Garima Shrivastav](https://linkedin.com/in/garima-shrivastav/)
+
+---
+
+### 🎉 Thank You!
+If you like this project, don’t forget to star ⭐ the repository!
