@@ -1,7 +1,7 @@
 # Vehicle Number Plate Detection App
 
 ## 🚀 Overview
-This is a *Vehicle Number Plate Detection App* built using *React.js* for the front-end, *Streamlit* for the backend, and *YOLO (You Only Look Once)* for object detection. The app allows users to upload images, detects vehicle number plates, and reads the extracted text. The application is containerized using *Docker* for easy deployment and scalability.
+This is a *Vehicle Number Plate Detection App* built using *React.js* for the front-end, *Streamlit* for the backend, and *YOLO (You Only Look Once)* for object detection. The app allows users to upload images, detects vehicle number plates, reads the extracted text and keeps count of the vehicle. The application is containerized using *Docker* for easy deployment and scalability.
 
 ---
 
@@ -87,12 +87,12 @@ The project includes:
 
 ---
 
-## 🤖 Future Enhancements
+## 🤖 Future Enhancements (This is an ongoing project)
 - Improve detection accuracy using *YOLOv5* or *YOLOv7*.
 - Integrate real-time *video detection* for live number plate recognition.
 - Optimize *OCR logic* for better text accuracy.
 - Add support for a *database* to store detected results.
-- Deploy the app to cloud platforms like AWS, Azure, or Heroku.
+- Deploy the app to cloud platforms like AWS or Azure.
 
 ---
 
@@ -119,3 +119,4 @@ Contributions are welcome! If you find bugs or want to add new features:
 
 ### 🎉 Thank You!
 If you like this project, don’t forget to star ⭐ the repository!
+You can also sponser this project to help me maintain and develop it further!
