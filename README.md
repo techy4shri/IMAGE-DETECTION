@@ -6,12 +6,12 @@ This is a *Vehicle Number Plate Detection App* built using *React.js* for the fr
 ---
 
 ## 🎯 Features
-- *User-Friendly Interface*: Navigation bar, image upload form, and result display for an intuitive user experience.
-- *Number Plate Detection: Detects vehicle number plates from uploaded images using the **YOLO* model.
-- *Text Extraction*: Reads the detected number plates using Optical Character Recognition (OCR).
-- *Responsive Front-End: Built with **React.js* for a smooth and interactive user experience.
-- *Scalable Deployment: Packaged with **Docker* for portability and ease of deployment.
-- *Backend Powered by Streamlit*: Handles image processing and OCR tasks efficiently.
+- User-Friendly Interface: Navigation bar, image upload form, and result display for an intuitive user experience.
+- Number Plate Detection: Detects vehicle number plates from uploaded images using the YOLO model.
+- Text Extraction: Reads the detected number plates using Optical Character Recognition (OCR).
+- Responsive Front-End: Built with React.js for a smooth and interactive user experience.
+- Scalable Deployment: Packaged with Docker for portability and ease of deployment.
+- Backend Powered by Streamlit: Handles image processing and OCR tasks efficiently.
 
 ---
 
@@ -19,7 +19,7 @@ This is a *Vehicle Number Plate Detection App* built using *React.js* for the fr
 - *Frontend*: React.js
 - *Backend*: Streamlit (Python)
 - *Containerization*: Docker
-- *Machine Learning*: YOLO (You Only Look Once)
+- *Machine Learning*: YOLO v3
 - *OCR*: Tesseract OCR
 - *Computer Vision*: OpenCV, PyTorch
 
@@ -35,23 +35,23 @@ This is a *Vehicle Number Plate Detection App* built using *React.js* for the fr
 ## 📦 Setup & Installation
 Follow these steps to set up and run the project locally:
 
-### *1. Clone the Repository*
+### 1. Clone the Repository
 `git clone https://github.com/techy4shri/IMAGE-DETECTION.git`
 `cd IMAGE-DETECTION`
 
 
-### *2. Install Frontend Dependencies*
+### 2. Install Frontend Dependencies
 Ensure Node.js is installed:
 `npm install  # or yarn install`
 
 
-### *3. Install Backend Dependencies*
+### 3. Install Backend Dependencies
 Ensure Python is installed:
 `pip install -r requirements.txt`
 
 
-### *4. Running the Application*
-#### *With Docker*
+### 4. Running the Application
+#### Build with Docker
 1. Build the Docker images:
 `docker-compose build`
 
@@ -60,7 +60,7 @@ Ensure Python is installed:
 
 The app will be accessible at http://localhost:80 (frontend) and Streamlit backend.
 
-#### *Without Docker*
+#### Without Docker
 1. Run the Streamlit backend:
 `streamlit run app.py`
 
